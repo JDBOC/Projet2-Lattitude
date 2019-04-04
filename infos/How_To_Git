@@ -1,0 +1,28 @@
+
+
+
+###################################################################################################################################################################################################
+# Je travaille TOUJOURS dans ma branche                                                                                                                                                           #
+###################################################################################################################################################################################################
+#                                                                                                                                                                                                 #
+#                                                                                                                                                                                                 #
+# git branch                                                                             # Je vérifie dans quelle branche je suis                                                                 #
+#   > 'ma_branche'                                                                       # Le terminal affiche le nom de la branche dans laquelle je me trouve                                    #
+# git checkout 'branche_commune'                                                         # Je passe dans la branche commune                                                                       #
+# git branch                                                                             # Je vérifie dans quelle branche je suis (pour être certain)                                             #
+#   > 'branche_commune'                                                                                                                                                                           #
+# git pull                                                                               # Je récupère la dernière version de la branche commune (étape 4)                                        #
+# git checkout 'ma_branche'                                                              # Je retourne dans ma branche                                                                            #
+# git merge 'ma_branche' 'branche_commune'                                               # Je merge la branche commune dans ma branche                                                            #
+#   > conflits                                                                           # Si j'ai des conflits à cette étape j'ouvre le fichier concerné et je corrige les conflits              #
+# git status                                                                             # Une fois les conflits gérés, je vérifie si tous mes fichiers sont dans l'index                         #
+#   >(en rouge)fichiers a ajouter à l'index (en vert) fichiers déjà ajouté à l'index                                                                                                              #
+# git add 'fichier1' 'fichier2'                                                          # J'ajoute ou supprime de l'index les fichiers concernés                                                 #
+# git commit -m ""                                                                       # Je commit avec un message les nouveaux changements                                                     #
+# git push                                                                               # Je pousse les changements en ligne                                                                     #
+# git checkout 'branche_commune'                                                         # Je repasse dans la branche commune                                                                     #
+# git fetch                                                                              # je vérifie qu'il n'y a pas eu de modification entre temps si nécessaire je recommence à l'étape 4      #
+# git merge 'branche_commune' 'ma_branche'                                               # Je merge ma branche dans la branche commune. (Comme j'ai déjà fait cette opération dans ma branche     #
+# git push                                                                               # le risque de nouveaux conflits est faible) Je pousse ensuite la branche commune en ligne.              #
+#                                                                                                                                                                                                 #
+###################################################################################################################################################################################################
