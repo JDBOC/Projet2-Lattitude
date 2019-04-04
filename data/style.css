@@ -1,0 +1,23 @@
+@font-face {
+	font-family: 'thekids';
+	src : url('fonts/The_Kids_Mraker.ttf');
+}
+
+@font-face {
+	font-family: 'supermario';
+	src : url('fonts/SuperMario256.ttf');
+}
+
+
+
+.toto1
+{
+	font-family: 'thekids', 'cursive';
+	color: black;
+}
+
+.toto2
+{
+	font-family: 'supermario', 'cursive';
+	color: black;
+}
