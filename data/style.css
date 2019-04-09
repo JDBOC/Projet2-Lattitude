@@ -10,14 +10,14 @@
 
 
 
-.toto1
+.toto
 {
-	font-family: 'thekids', 'cursive';
-	color: black;
+	background: #4592DD;
 }
 
-.toto2
-{
-	font-family: 'supermario', 'cursive';
-	color: black;
+.navbar-brand {
+	font-family: 'supermario';
+	font-size: 2rem;
+	color: #FCC802;
+	letter-spacing: 0.4em;
 }
