@@ -16,6 +16,7 @@
 
 <body>
 
+<!-- HEADER -->
 {% block header %}
 
 <section id="header">
@@ -24,17 +25,57 @@
             <h1>L'@TTITUDE</h1>
         </div>
     </div>
-
 </section>
 
 {% endblock %}
 
-{% block content %}
-    
-{% endblock %}
+<!-- CONTENU -->
+
+<link rel="stylesheet" type="text/css" href="../style/profil.css">
+
+<section>
+
+    <div class="container-fluid">
+
+        <div id="contenu" class="row">
 
 
-<h1>TEST</h1>
+            <div class="col-lg-4">
+                <h3>Navbar slide</h3>
+            </div>
+
+
+
+            <div class="col-lg-8">
+                <section id="titre console">
+                    <div class="container-fluid">
+                        <div class="row view-group col-lg-12">
+                            <h1>CONSOLE ADMIN</h1>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="content">
+                    <div class="container-fluid">
+                        <div class="row view-group col-lg-12">
+                            {% block content %}
+                            <h1>CONTENT</h1>
+                            {% endblock %}
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
 
 
 
