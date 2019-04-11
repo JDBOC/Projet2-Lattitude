@@ -14,10 +14,15 @@ class UserController extends \App\Controller\AbstractController
             if (empty($error)) {
                 $objetUser = new UserManager('users');
                 $objetUser->addUser($_POST['firstname'], $_POST['lastname'], $_POST['email'], $_POST['password']);
+                return $this->twig->render('signup.html.twig', ['sucess'=>'Compte bien enregistré']);
+            }
+            else {
+                return $this->twig->render('signup.html.twig', ['error'=>$error]);
             }
         }
-        
-        return $this->twig->render('signup.html.twig');
+        else{
+            return $this->twig->render('signup.html.twig');
+        }
     }
     
     
@@ -30,7 +35,7 @@ class UserController extends \App\Controller\AbstractController
      * @param string $password
      * @return array
      */
-    private function verify(string $firstname, $lastname, $email, $password)
+    private function verify($firstname, $lastname, $email, $password)
     {
         $error = [];
         
@@ -38,7 +43,7 @@ class UserController extends \App\Controller\AbstractController
         if (empty($firstname)) {
             $error['firstname'] = "firstname is required";
         }
-        
+
         if (!preg_match("/^[a-z A-Z]*$/", $firstname)) {
             $error['firstname'] = 'only letters please';
         }
