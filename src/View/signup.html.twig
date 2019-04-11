@@ -1,31 +1,3 @@
-<?php
-require_once('ignore.php');
-require('functionsForm.php');
-
-
-	$pdo = new PDO(DSN, USER, PASS);
-
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-	$lastname = $_POST['lastname'];
-	$firstname = $_POST['firstname'];
-	$email = $_POST['email'];
-	$password = $_POST['password'];
-	$error = verifyRegister($lastname, $firstname, $email, $password);
-	
-	/*ajout BDD
-	if (empty($error)) {
-
-		addUser($pdo, $lastname, $firstname, $email, $password);
-	
-	}
-	*/
-}
-
-?>
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -41,14 +13,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	<div class="form-row">
 		<div class="form-group col-md-6">
 			<label for="firstname">Firstname</label>
-			<input type="text" class="form-control" id="firstname" name="firstname" placeholder="Your firstname">
+			<input type="text" class="form-control" id="firstname1" name="firstname" placeholder="Your firstname">
 {{ error.firstname }}
 		</div>
 
 
 		<div class="form-group col-md-6">
 			<label for="lastname">Lastname</label>
-			<input type="text" class="form-control" id="lastname" name="lastname" placeholder="Your lastname">
+			<input type="text" class="form-control" id="lastname1" name="lastname" placeholder="Your lastname">
 {{ error.lastname }}
 		</div>
 
