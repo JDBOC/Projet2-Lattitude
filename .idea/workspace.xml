@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d892c2d9-d996-4e64-a55a-8134958dc08a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/signup.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/signup.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,19 +37,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/View/signup.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="36" column="19" lean-forward="true" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="19" />
+            <state relative-caret-position="228">
+              <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
+            <state relative-caret-position="836">
               <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
               <folding>
                 <element signature="e#1038#2424#0#PHP" expanded="true" />
@@ -118,8 +116,8 @@
         <option value="$PROJECT_DIR$/src/View/signup.php" />
         <option value="$PROJECT_DIR$/src/Model/AddUserManager.php" />
         <option value="$PROJECT_DIR$/src/Model/UserManager.php" />
-        <option value="$PROJECT_DIR$/src/View/signup.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/UserController.php" />
+        <option value="$PROJECT_DIR$/src/View/signup.html.twig" />
       </list>
     </option>
   </component>
@@ -311,12 +309,12 @@
       <workItem from="1554388834913" duration="1420000" />
       <workItem from="1554902312108" duration="9473000" />
       <workItem from="1554971423067" duration="1631000" />
-      <workItem from="1554973072916" duration="8127000" />
+      <workItem from="1554973072916" duration="8885000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21133000" />
+    <option name="totallyTimeSpent" value="21891000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="25" width="1920" height="990" extended-state="6" />
@@ -511,13 +509,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/signup.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="36" column="19" lean-forward="true" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/UserManager.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -527,11 +518,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
+        <state relative-caret-position="836">
           <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
           <folding>
             <element signature="e#1038#2424#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/signup.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
