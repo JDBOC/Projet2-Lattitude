@@ -3,7 +3,7 @@
 
 namespace App\Controller;
 
-class VideoGameController
+class NewsController extends AbstractController
 {
 
 }
