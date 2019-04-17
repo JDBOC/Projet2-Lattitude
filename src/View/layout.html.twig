@@ -1,20 +1,70 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
+
+
 <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>{% block title %}{% endblock %}</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 
-    <link rel="stylesheet" href="/assets/css/style.css">
-    {% block stylesheet %}{% endblock %}
-    <link rel="icon" href="/assets/images/favicon.png">
+    <title>{% block title %}  {% endblock %}</title>
 </head>
 
 <body>
 
-{% block content %}{% endblock %}
+<!-- HEADER -->
+{% block header %}
+
+{% endblock %}
+
+<!-- CONTENU -->
+
+<link rel="stylesheet" type="text/css" href="../style/profil.css">
+
+<section>
+
+    <div class="container-fluid">
+
+        <div id="contenu" class="row">
+
+
+            <div class="col-lg-4">
+                <h3>Navbar slide</h3>
+            </div>
+
+
+
+            <div class="col-lg-8">
+                <section id="titre console">
+                    <div class="container-fluid">
+                        <div class="row view-group col-lg-12">
+                            <h1>CONSOLE ADMIN</h1>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="content">
+                    <div class="container-fluid">
+                        <div class="row view-group col-lg-12">
+                            {% block content %}
+                        
+                            {% endblock %}
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
 {% block javascript %}{% endblock %}
 </body>
 </html>
