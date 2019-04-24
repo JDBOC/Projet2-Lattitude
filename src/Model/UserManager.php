@@ -9,7 +9,7 @@ class UserManager extends \App\Model\AbstractManager
         parent::__construct(self::TABLE);
     }
     /*enregistrement dans la BDD*/
-    public function addUser($lastname, $firstname, $email, $password)
+    public function addUser($firstname, $lastname, $email, $password)
     {
     	
     	  $pass_Crypt = password_hash($password, PASSWORD_DEFAULT);

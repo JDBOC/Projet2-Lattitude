@@ -84,19 +84,19 @@ class UserController extends \App\Controller\AbstractController
     public function UserLogin() {
         $objetUser = new UserManager();
 
-    if (isset($passwordIsCorrect)){
+    
         $Data = $objetUser->UserOK($_POST['email']);
 
 // Comparaison du pass envoyé via le formulaire avec la base
 	    $passwordIsCorrect = password_verify($_POST['password'], $Data['password']);
-	
-	    if (!$passwordIsCorrect)
-	    {
+        if (isset($passwordIsCorrect)){
+	        if (!$passwordIsCorrect)
+	        {
 		    echo 'Wrong email or password... Bullshit';
-	    }
-	    else
-	    {
-		    if ($passwordIsCorrect) {
+	        }
+	        else
+	        {
+		        if ($passwordIsCorrect) {
 			    session_start();
 			   // $_SESSION['id'] = $resultat['id'];
 			    $_SESSION['email'] = $email;
@@ -109,5 +109,5 @@ class UserController extends \App\Controller\AbstractController
     return $this->twig->render('Home/index.html.twig');
    
 }
-}
+    }
 }
