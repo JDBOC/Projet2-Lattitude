@@ -74,4 +74,41 @@ class UserController extends \App\Controller\AbstractController
         
         return $error;
     }
+	
+	/**
+	 * @param $email
+	 * @param $password
+	 * VERIFICATION EMAIL ET PASSWORD EXISTANT DANS BDD
+	 */
+	
+    public function UserLogin() {
+        $objetUser = new UserManager();
+        $Data = $objetUser->UserOK ($_POST['password']);
+       
+
+	    
+
+// Comparaison du pass envoyé via le formulaire avec la base
+	    $passwordIsCorrect = password_verify($_POST['password'], $resultat['password']);
+	
+	    if (!$resultat)
+	    {
+		    echo 'Wrong email or password... Bullshit';
+	    }
+	    else
+	    {
+		    if ($passwordIsCorrect) {
+			    session_start();
+			   // $_SESSION['id'] = $resultat['id'];
+			    $_SESSION['email'] = $email;
+			    echo "You're in !";
+		    }
+		    else {
+			    echo 'Wrong email or password';
+		    }
+	    }
+    
+    return $this->twig->render('login.html.twig');
+    var_dump ($Data);
+}
 }
