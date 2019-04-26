@@ -8,7 +8,7 @@
 
 namespace App\Controller;
 
-class HomeController extends AbstractController
+class AdminController extends AbstractController
 {
 
     /**
@@ -21,6 +21,6 @@ class HomeController extends AbstractController
      */
     public function index()
     {
-        return $this->twig->render('Home/index.html.twig');
+        return $this->twig->render('Admin/news_admin.html.twig');
     }
 }
